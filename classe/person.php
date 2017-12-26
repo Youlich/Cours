@@ -17,14 +17,17 @@ class Person
         $this->_lastName=$_lastName;
         $this->_age=$_age;
     }
+    public function fullName()
+    {
+        echo $this->_firstName . " " . $this->_lastName;
+    }
 }
 
 /**creation de l'objet, on instancie la classe*/
 
 $Julie = new Person ('Julie','Tatibouet', '39');
-var_dump($Julie->_firstName);
-var_dump($Julie->_lastName);
-var_dump($Julie->_age);
+
+$Julie->fullName(); /** on affiche le nom complet */
 
 
 
