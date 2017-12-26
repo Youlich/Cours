@@ -19,7 +19,7 @@ class Person
     }
     public function fullName()
     {
-        echo $this->_firstName . " " . $this->_lastName;
+        return $this->_firstName . " " . $this->_lastName;
     }
 }
 
@@ -27,7 +27,9 @@ class Person
 
 $Julie = new Person ('Julie','Tatibouet', '39');
 
-$Julie->fullName(); /** on affiche le nom complet */
+$nomcomplet = $Julie->fullName(); /** on affiche le nom complet */
+
+echo $nomcomplet;
 
 
 
