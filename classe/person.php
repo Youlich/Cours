@@ -1,9 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: jutat
- * Date: 25/12/2017
- * Time: 17:33
+getters et setters
  */
 class Person
 {
